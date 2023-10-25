@@ -22,10 +22,10 @@ class Person
 
     //Reto4: método printAll
     printAll(){
-        console.log('Name is: ' + this.name);
-        console.log(this.name + ' - ' + this.height);
-        console.log(this.name + ' - ' + this.height);
-        console.log(this.name + ' - ' + this.yearOfBirth);
+        console.log('Name - ' + this.name);
+        console.log('Height - ' + this.height);
+        console.log('Weight - ' + this.weight);
+        console.log('Year of Birth - ' + this.yearOfBirth);
     }
 
     //Reto5
