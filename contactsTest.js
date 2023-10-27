@@ -1,8 +1,8 @@
 let myLib = require("./contacts");
 let myLib2 = require("./person");
 
-// let Contacts = myLib.Contacts;
-// let Person = myLib2.Person;
+let Contacts = myLib.Contacts;
+let Person = myLib2.Person;
 
 let contacts = new Contacts();
 
