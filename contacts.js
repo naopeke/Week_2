@@ -1,3 +1,5 @@
+let myLib = require("./persons");
+
 class Contacts {
     //constructor
     // constructor([name, height, weight, yearOfBirth, hobbies]) {
@@ -13,22 +15,37 @@ class Contacts {
     }
 
     //método printPersons
-    printPersons(){
-        this.people.forEach(function(personArr){
-            let name = personArr [0];
-            let height = personArr[1];
-            let weight = personArr[2];
-            let yearOfBirth =  personArr[3];
-            let hobbies = personArr[4];
 
-            console.log('Name - ' + name);
-            console.log('Height - ' + height);
-            console.log('Weight - ' + weight);
-            console.log('Year of Birth - ' + yearOfBirth);
-            console.log('Hobbies - ' + hobbies)
-        });
+    printPersons(){
+        this.people.forEach(function (person){
+            console.log('Name - ' + person.name);
+            console.log('Height - ' + person.height);
+            console.log('Weight - ' + person.weight);
+            console.log('Year of Birth - ' + person.yearOfBirth);
+            console.log('Hobbies - ' + person.hobbies);
+            console.log('IMC - ' + person.calcIMC());
+            console.log('Age - ' + person.calcAge());
+
+        })
     }
 }
+
+//     printPersons(){
+//         this.people.forEach(function(personArr){
+//             let name = personArr [0];
+//             let height = personArr[1];
+//             let weight = personArr[2];
+//             let yearOfBirth =  personArr[3];
+//             let hobbies = personArr[4];
+
+//             console.log('Name - ' + name);
+//             console.log('Height - ' + height);
+//             console.log('Weight - ' + weight);
+//             console.log('Year of Birth - ' + yearOfBirth);
+//             console.log('Hobbies - ' + hobbies)
+//         });
+//     }
+// }
  //no funciona↓ (case1)
 //     printPersons() {
 //         console.log(['Name -' + this.name,
