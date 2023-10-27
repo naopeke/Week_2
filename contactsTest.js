@@ -1,11 +1,15 @@
 let myLib = require("./contacts");
 
-let person1 = new myLib.Contacts(['Juan', 170, 60, 2000, ["Videojuego", "Cine", "Moto"]]);
+let contacts = new myLib.Contacts ();
 
-let persons = [
-    new myLib.Contacts(['María', 155, 50, 1990, ["Leer", "Cine", "Viaje"]]),
-    new myLib.Contacts(['Juan', 170, 60, 2000, ["Videojuego", "Cine", "Moto"]])
-];
+contacts.people.push(['Juan', 170, 60, 2000, ["Videojuego", "Cine", "Moto"]]);
+
+contacts.printPersons();
+
+// let persons = [
+//     new myLib.Contacts(['María', 155, 50, 1990, ["Leer", "Cine", "Viaje"]]),
+//     new myLib.Contacts(['Juan', 170, 60, 2000, ["Videojuego", "Cine", "Moto"]])
+// ];
 //console.log(person1);
 
 //(case1)
@@ -14,6 +18,6 @@ let persons = [
 //(case2)
 
 
-for (let person of persons) {
-    person.printPersons();
-}
+// for (let person of people) {
+//     person.printPersons();
+// }
