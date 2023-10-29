@@ -8,5 +8,5 @@ let birthYear = persona.yearOfBirth(2023);
 console.log(`Birth Year : ${birthYear}`);
 
 persona.setAddress('Calle Granvia 11');
-const newAddress = persona.getAddress('Calle Takarazuka 29');
+const newAddress = persona.getAddress();
 console.log(`New address: ${newAddress}`);
