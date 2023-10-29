@@ -24,7 +24,7 @@ class Contacts {
             console.log('Year of Birth - ' + person.yearOfBirth);
             console.log('Hobbies - ' + person.hobbies);
             console.log('IMC - ' + person.calcIMC());
-            console.log('Age - ' + person.calcAge());
+            console.log('Age - ' + person.calcAge(2023));
 
         })
     }
