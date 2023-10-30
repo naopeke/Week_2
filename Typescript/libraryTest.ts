@@ -10,5 +10,6 @@ console.log(library.toString());
 
 console.log(library.getNumberOfBooks());
 
-let searchAuthor = library.findByAuthor('Miguel A. Gómez');
-console.log(searchAuthor.map(book => book.toString()));
+//find by author
+let author = 'Miguel A. Gómez';
+console.log('Result of Search by Author :\n' + library.findByAuthor(author));

@@ -55,8 +55,7 @@ export class Library {
 
 
     // //método find by author
-    public findByAuthor (author:string):Book[]{
+    public findByAuthor(author: string): Book[] {
         return this.books.filter(book => book.getAuthor() === author);
     }
-
 }
